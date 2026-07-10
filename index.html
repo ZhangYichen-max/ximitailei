@@ -37,12 +37,38 @@
         .welcomewords{
           color:skyblue;
         }
+        .top-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 16px;
+    z-index: 999;
+}
+
+.top-nav a {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.top-nav a:hover {
+    background: #e8e8e8;
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
     <h1 class="welcomewords">西米太累的导航站</h1>
     <h3>ZhangYichen's Website</h3>
     <h2 class="todosth">做点什么...</h2>
+    <div class="top-nav">
+    <a href="login.html">登录</a>
+        <a href="reg.html">注册</a>
+</div>
     <p class="sub"></p>
     <div class="links">
         <a href="https://b23.tv/PWfNzj1">我的B站主页</a>
